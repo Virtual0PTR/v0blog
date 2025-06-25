@@ -1,0 +1,11 @@
+{{ if .IsTranslated }}
+<select onchange="window.location.href=this.value" class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
+    <!-- 当前语言选项 -->
+    <option value="{{ .RelPermalink }}" selected>{{ .Lang | upper }}</option>
+    
+    {{ range .Translations }}
+    <!-- 翻译语言选项 -->
+    <option value="{{ .RelPermalink }}">{{ .Lang | upper }}</option>
+    {{ end }}
+</select>
+{{ end }}
