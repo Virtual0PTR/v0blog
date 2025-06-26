@@ -1,11 +1,47 @@
 {{ if .IsTranslated }}
-<select onchange="window.location.href=this.value" class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
-    <!-- 褰撳墠璇█閫夐」 -->
-    <option value="{{ .RelPermalink }}" selected>{{ .Lang | upper }}</option>
+<div class="language-switcher flex items-center {{ cond (eq $.Site.Language.LanguageDirection "rtl") "ml3" "mr3" }}">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h1 w1 mr1 white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+  </svg>
+  
+  <div class="relative">
+    <select onchange="window.location.href=this.value" 
+            class="appearance-none bg-transparent border-0 pv1 ph2 pr4 f6 fw5 pointer outline-0 white hover-bg-dark-gray br2 transition-all">
+      <option value="{{ .RelPermalink }}" selected>{{ .Lang | upper }}</option>
+      {{ range .Translations }}
+      <option value="{{ .RelPermalink }}">{{ .Lang | upper }}</option>
+      {{ end }}
+    </select>
     
-    {{ range .Translations }}
-    <!-- 缈昏瘧璇█閫夐」 -->
-    <option value="{{ .RelPermalink }}">{{ .Lang | upper }}</option>
-    {{ end }}
-</select>
+    <div class="absolute top-50 right-0 translate-y--50 pointer-events-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h05 w05 white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+  </div>
+</div>
+
+<style>
+  .language-switcher {
+    color: white;
+  }
+  
+  .language-switcher select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .language-switcher option {
+    color: #333; /* 下拉选项保持深色 */
+    background: white;
+  }
+  
+  .language-switcher select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+  }
+</style>
 {{ end }}
