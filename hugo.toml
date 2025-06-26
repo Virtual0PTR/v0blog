@@ -33,7 +33,7 @@ featured_image = '/images/background.jpg'
                 pageRef = '/'
                 weight = 10
             [[languages.zh.menu.main]]
-                name = 'Tags'
+                name = '标签'
                 pageRef = '/tags'
                 weight = 15
             [[languages.zh.menu.main]]

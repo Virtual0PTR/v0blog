@@ -6,3 +6,6 @@ other = "No image"
 
 [dateFormat]
 other = "January 2, 2006"
+
+[tag]
+other = "Tag"

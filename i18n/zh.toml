@@ -6,3 +6,6 @@ other = "无图片"
 
 [dateFormat]
 other = "2006年1月2日"
+
+[tag]
+other = "标签"
