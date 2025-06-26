@@ -16,8 +16,12 @@ featured_image = '/images/background.jpg'
                 pageRef = '/'
                 weight = 10
             [[languages.en.menu.main]]
+                name = 'Tags'
+                pageRef = '/tags'
+                weight = 15
+            [[languages.en.menu.main]]
                 name = 'DN42'
-                pageRef = '/about/dn42'
+                pageRef = '/tags/dn42'
                 weight = 20
     [languages.zh]
         contentDir = 'content/zh'
@@ -29,8 +33,12 @@ featured_image = '/images/background.jpg'
                 pageRef = '/'
                 weight = 10
             [[languages.zh.menu.main]]
+                name = 'Tags'
+                pageRef = '/tags'
+                weight = 15
+            [[languages.zh.menu.main]]
                 name = 'DN42'
-                pageRef = '/about/dn42'
+                pageRef = '/tags/dn42'
                 weight = 20
 
 

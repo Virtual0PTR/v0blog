@@ -1,0 +1,52 @@
+{{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
+{{ if $featured_image }}
+  {{/* 设置21:9宽高比 */}}
+  {{ $aspect_ratio := "42.85%" }} {{/* 9/21=0.4285 */}}
+  
+  {{/* 获取参数或使用默认值 */}}
+  {{ $featured_image_class := site.Params.featured_image_class | compare.Default "cover bg-center" }}
+  {{ $cover_dimming_class := site.Params.cover_dimming_class | compare.Default "bg-black-60" }}
+  
+  {{/* 固定宽高比容器 */}}
+  <div class="relative w-100 overflow-hidden" style="padding-top: {{ $aspect_ratio }};">
+    {{/* 背景图片层 */}}
+    <div 
+      class="absolute top-0 left-0 w-100 h-100 {{ $featured_image_class }}"
+      style="background-image: url('{{ $featured_image }}');"
+    ></div>
+    
+    {{/* 遮罩和内容层 */}}
+    <div class="absolute top-0 left-0 w-100 h-100 {{ $cover_dimming_class }} flex flex-column">
+      {{ partials.Include "site-navigation.html" .}}
+      
+      {{/* 内容容器 - 使用flex居中 */}}
+      <div class="flex-auto flex flex-column justify-center items-center pv4 pv6-l ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title tc">
+          {{ .Title | compare.Default .Site.Title }}
+        </h1>
+        {{ with .Params.description }}
+          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3 tc">
+            {{ . }}
+          </h2>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{ else }}
+  {{/* 无图片时的备用头部 */}}
+  <header>
+    <div class="pb3-m pb6-l {{ .Site.Params.background_color_class | compare.Default "bg-black" }}">
+      {{ partials.Include "site-navigation.html" . }}
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          {{ .Title | compare.Default .Site.Title }}
+        </h1>
+        {{ with .Params.description }}
+          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+            {{ . }}
+          </h2>
+        {{ end }}
+      </div>
+    </div>
+  </header>
+{{ end }}

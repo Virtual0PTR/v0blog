@@ -28,23 +28,25 @@
                   {{ $img = resources.Get $featured_image }}
                 {{ end }}
                 
-                <!-- 减小图片高度 -->
-                <div class="w-100 overflow-hidden" style="height: 150px; height: 200px;">
+                <!-- 修改：使用16:9比例容器 -->
+                <div class="w-100 relative overflow-hidden" style="padding-top: 56.25%;">
                   {{ if $img }}
                     <img src="{{ $img.RelPermalink }}" alt="{{ .Title }}" 
-                         class="w-100 h-100" 
+                         class="absolute top-0 left-0 w-100 h-100" 
                          style="object-fit: cover;">
                   {{ else }}
                     <!-- 直接使用原始图片路径 -->
                     <img src="{{ $featured_image | absURL }}" alt="{{ .Title }}" 
-                         class="w-100 h-100" 
+                         class="absolute top-0 left-0 w-100 h-100" 
                          style="object-fit: cover;">
                   {{ end }}
                 </div>
               {{ else }}
-                <!-- 减小占位符高度 -->
-                <div class="w-100 bg-light-gray" style="height: 100px; display: flex; align-items: center; justify-content: center;">
-                  <span class="gray">{{ i18n "noImage" }}</span>
+                <!-- 修改：16:9占位符 -->
+                <div class="w-100 relative overflow-hidden" style="padding-top: 56.25%;">
+                  <div class="absolute top-0 left-0 w-100 h-100 bg-light-gray flex items-center justify-center">
+                    <span class="gray">{{ i18n "noImage" }}</span>
+                  </div>
                 </div>
               {{ end }}
               
