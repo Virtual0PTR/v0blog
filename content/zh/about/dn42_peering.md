@@ -56,6 +56,8 @@ Extended Next Hop: (true/false)
     + 172.22.122.129
     + fdee:9bff:b001::1
     + fe80::d555
-  + Wireguard公钥:xin3e9mT1MVzPUVGG7pVIZ/FIkwOIGQNN2cVpCTLNS8=
+  + Wireguard公钥:\
+  xin3e9mT1MVzPUVGG7pVIZ\
+  /FIkwOIGQNN2cVpCTLNS8=
   + 带宽:  1 Gbps([`Communities`](https://dn42.dev/howto/BGP-communities) 可能要用)
 

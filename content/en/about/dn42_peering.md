@@ -1,12 +1,12 @@
 +++
 date = '2000-01-01T00:00:00+00:00'
 draft = false
-title = 'Dn42 对等信息'
+title = 'Dn42 Peering Information'
 featured_image = '/images/dn42.jpg'
 tags = ["DN42"]
 +++
 
-### 基本信息
+### Basic Information
 
 ASN:[`AS4242420555`](https://explorer.burble.com/#/aut-num/AS4242420555)
 
@@ -18,22 +18,22 @@ Domain:[`0xptr.dn42`](https://explorer.burble.com/#/domain/0xptr.dn42)
 
 Looking glass:[`lg-dn42`](https://lg-dn42.0xptr.top)
 
-IPV6 本地链路地址: `fe80::d555`
+IPV6 Link-local address: `fe80::d555`
 
-Wireguard 监听端口：你的 ASN 的后五位
+Wireguard Listening Port：The last five digits of your ASN
 
-### 联系方式:
+### Contact Details:
 
 [`VIRTUAL0PTR-DN42`](https://explorer.burble.com/#/person/VIRTUAL0PTR-DN42)
 
-### 注意事项:
+### Precautions:
 
-+  (目前)仅支持Wireguard隧道
-+  我偏好使用MP-BGP与ENH(但是可选)
-+  没有境内节点，故不接受境内对等
-+  `如果网络炸了请告我一声`
++  Only Wireguard tunnels are supported (currently)
++  I prefer MP-BGP and ENH (but optional)
++  There is no mainland China node, so peers from mainland China are not accepted
++  `If the network crashes, please let me know.`
 
-对等时您需要使用以下模板:
+You need to use the following template when peering:
 
 ```
 ASN:
@@ -49,13 +49,15 @@ Multi-Protocol BGP: (true (IPv4/IPv6) /false)
 Extended Next Hop: (true/false)
 ```
 
-### 我的节点:
+### My Node:
 1. **HK-01**
-  + 端点: hk-01.node.dn42.0xptr.top
-  + DN42地址:
+  + Endpoint: hk-01.node.dn42.0xptr.top
+  + DN42 Address:
     + 172.22.122.129
     + fdee:9bff:b001::1
     + fe80::d555
-  + Wireguard公钥:xin3e9mT1MVzPUVGG7pVIZ/FIkwOIGQNN2cVpCTLNS8=
-  + 带宽:  1 Gbps([`Communities`](https://dn42.dev/howto/BGP-communities) 可能要用)
+  + Wireguard Public Key:\
+  xin3e9mT1MVzPUVGG7pVIZ\
+  /FIkwOIGQNN2cVpCTLNS8=
+  + Bandwidth: 1 Gbps ([`communities`](https://dn42.dev/howto/BGP-communities) may be used)
 

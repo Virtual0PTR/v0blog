@@ -1,21 +1,24 @@
 {{ define "main" }}
   <div class="mw8 center mv4 mv5-l">
-    <!-- 桌面端左右布局 -->
     <div class="flex flex-wrap flex-nowrap-l">
-      <!-- 左侧：页面标题和描述 - 增加桌面端右侧间距 -->
+      <!-- 左侧：页面标题和描述 -->
       <div class="w-100 w-30-l pr5-l pr6-xl mb4 mb0-l ph3">
         <article class="cf pa3 pa4-l bg-white br3 shadow-1">
           <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links {{ $.Param "text_color" | default "mid-gray" }}">
             <h1 class="f3 f2-ns fw6 mb3">{{ .Title }}</h1>
             
-            <!-- 所有标签的链接 -->
+            <!-- 所有标签的链接 - 已修改为显示翻译后标题 -->
             <div class="mt3 mb3">
               <h2 class="f5 fw6 mb2">{{ i18n "allTags" }}</h2>
               <div class="flex flex-wrap">
-                {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-                  <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" class="dib pa2 mb2 mr2 bg-light-gray br2 link blue hover-bg-light-blue">
-                    {{ $name }}
-                  </a>
+                {{ range .Site.Taxonomies.tags.ByCount }}
+                  {{ with .Page }}
+                    <a href="{{ .RelPermalink }}" 
+                       class="dib pa2 mb2 mr2 bg-light-gray br2 link blue hover-bg-light-blue"
+                       title="{{ .Title }}">
+                      {{ .Title }} ({{ .Pages.Len }})
+                    </a>
+                  {{ end }}
                 {{ end }}
               </div>
             </div>
@@ -24,7 +27,6 @@
           </div>
         </article>
       </div>
-
       <!-- 右侧：标签列表 - 增加桌面端左侧间距 -->
       <div class="w-100 w-70-l pl4-l pl5-xl ph3">
         <section class="ph0">
