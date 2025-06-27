@@ -1,8 +1,8 @@
 {{ define "main" }}
-  {{/* 1. 正确获取文章 - 优先使用 posts 类型 */}}
-  {{ $pages := where site.RegularPages "Type" "posts" }}
+  {{/* 1. 正确获取文章 - 优先使用 post 类型 */}}
+  {{ $pages := where site.RegularPages "Type" "post" }}
   
-  {{/* 2. 如果 posts 目录为空，则回退到 mainSections */}}
+  {{/* 2. 如果 post 目录为空，则回退到 mainSections */}}
   {{ if not $pages }}
     {{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
   {{ end }}
