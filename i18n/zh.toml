@@ -9,3 +9,18 @@ other = "2006年1月2日"
 
 [tag]
 other = "标签"
+
+[archives]
+other = "归档"
+
+[yearMonthFormat]
+other = "2006年1月"
+
+[yearMonthFormatShort]
+other = "2006/01"
+
+[draft]
+other = "草稿"
+
+[noArticlesFound] 
+other = "未找到任何文章"

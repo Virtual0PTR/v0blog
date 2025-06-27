@@ -10,6 +10,7 @@
             
             <!-- 所有标签的链接 -->
             <div class="mt3 mb3">
+              <h2 class="f5 fw6 mb2">{{ i18n "allTags" }}</h2>
               <div class="flex flex-wrap">
                 {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
                   <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" class="dib pa2 mb2 mr2 bg-light-gray br2 link blue hover-bg-light-blue">

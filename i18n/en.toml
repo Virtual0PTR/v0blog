@@ -9,3 +9,18 @@ other = "January 2, 2006"
 
 [tag]
 other = "Tag"
+
+[archives]
+other = "Archives"
+
+[yearMonthFormat]
+other = "January, 2006"
+
+[yearMonthFormatShort]
+other = "2006/01"
+
+[draft]
+other = "Draft"
+
+[noArticlesFound] 
+other = "No articles found"

@@ -18,6 +18,10 @@ featured_image = '/images/background.jpg'
             [[languages.en.menu.main]]
                 name = 'Tags'
                 pageRef = '/tags'
+                weight = 12
+            [[languages.en.menu.main]]
+                name = 'Archives'
+                pageRef = '/archives'
                 weight = 15
             [[languages.en.menu.main]]
                 name = 'DN42'
@@ -35,6 +39,10 @@ featured_image = '/images/background.jpg'
             [[languages.zh.menu.main]]
                 name = '标签'
                 pageRef = '/tags'
+                weight = 12
+            [[languages.zh.menu.main]]
+                name = '归档'
+                pageRef = '/archives'
                 weight = 15
             [[languages.zh.menu.main]]
                 name = 'DN42'

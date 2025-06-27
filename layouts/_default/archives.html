@@ -1,0 +1,95 @@
+{{ define "main" }}
+  {{/* 1. 正确获取文章 - 优先使用 posts 类型 */}}
+  {{ $pages := where site.RegularPages "Type" "posts" }}
+  
+  {{/* 2. 如果 posts 目录为空，则回退到 mainSections */}}
+  {{ if not $pages }}
+    {{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+  {{ end }}
+  
+  {{/* 3. 如果仍然没有文章，则获取所有常规页面 */}}
+  {{ if not $pages }}
+    {{ $pages = site.RegularPages }}
+  {{ end }}
+  
+  {{/* 按日期倒序排序 */}}
+  {{ $sortedPages := $pages.ByDate.Reverse }}
+  
+  {{/* 按年月分组 */}}
+  {{ $groupedPages := $sortedPages.GroupByDate "2006-01" }}
+  
+  <div class="mw8 center mv4 mv5-l">
+    <div class="flex flex-wrap flex-nowrap-l">
+      <!-- 左侧：时间索引卡片 -->
+      <div class="w-100 w-30-l pr5-l pr6-xl mb4 mb0-l ph3">
+        <article class="cf pa3 pa4-l bg-white br3 shadow-1 sticky-l top-2-l">
+          <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links {{ $.Param "text_color" | default "mid-gray" }}">
+            <h1 class="f3 f2-ns fw6 mb3">{{ i18n "archives" }}</h1>
+            
+            <!-- 时间索引 -->
+            <nav>
+              <ul class="list pl0">
+                {{ range $groupedPages }}
+                  {{ $date := printf "%s-01" .Key | time.AsTime }}
+                  <li class="mb2">
+                    <a href="#{{ replace .Key "-" "_" }}" 
+                       class="link blue hover-dark-gray">
+                      {{ $date | time.Format (i18n "yearMonthFormat") }}
+                      <span class="f6 ml2">({{ len .Pages }})</span>
+                    </a>
+                  </li>
+                {{ end }}
+              </ul>
+            </nav>
+          </div>
+        </article>
+      </div>
+
+      <!-- 右侧：文章列表 -->
+      <div class="w-100 w-70-l pl4-l pl5-xl ph3">
+        <section class="cf">
+          {{ if not $groupedPages }}
+            <div class="bg-washed-yellow pa3 br2">
+              <p class="ma0">{{ i18n "noArticlesFound" }}</p>
+            </div>
+          {{ else }}
+            {{ range $groupedPages }}
+              {{ $date := printf "%s-01" .Key | time.AsTime }}
+              <div id="{{ replace .Key "-" "_" }}" class="mb4 mb5-l">
+                <h2 class="f3 f2-ns fw6 mb3 pb2 bb b--light-gray">
+                  {{ $date | time.Format (i18n "yearMonthFormat") }}
+                </h2>
+                
+                <!-- 按日期分组 -->
+                {{ $dailyPages := .Pages.GroupByDate "2006-01-02" }}
+                {{ range $dailyPages }}
+                  <div class="mb3 mb4-l">
+                    {{ $date := .Key | time.AsTime }}
+                    <h3 class="f5 f4-ns fw6 mb2 gray">
+                      {{ $date | time.Format (i18n "dateFormat") }}
+                    </h3>
+                    
+                    <!-- 文章列表 -->
+                    <ul class="list pl0">
+                      {{ range .Pages }}
+                        <li class="mb2">
+                          <a href="{{ .RelPermalink }}" class="link blue hover-dark-gray flex items-center">
+                            <span class="mr2">•</span>
+                            <span>{{ .Title }}</span>
+                            {{ if .Draft }}
+                              <span class="f7 ml2 bg-light-yellow pa1 br2">{{ i18n "draft" }}</span>
+                            {{ end }}
+                          </a>
+                        </li>
+                      {{ end }}
+                    </ul>
+                  </div>
+                {{ end }}
+              </div>
+            {{ end }}
+          {{ end }}
+        </section>
+      </div>
+    </div>
+  </div>
+{{ end }}
