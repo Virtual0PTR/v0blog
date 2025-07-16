@@ -59,6 +59,10 @@ featured_image = '/images/background.jpg'
                 pageRef = '/archives'
                 weight = 15
             [[languages.zh.menu.main]]
+                name = '关于'
+                pageRef = '/about'
+                weight = 16
+            [[languages.zh.menu.main]]
                 name = 'DN42'
                 pageRef = '/tags/dn42'
                 weight = 20

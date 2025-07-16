@@ -1,10 +1,12 @@
 +++
 date = '2025-07-15T16:09:21+08:00'
-draft = false
+draft = true
 title = '关于'
 layout = 'single'
 featured_image = '/images/background.jpg'
 +++
+
+> **The English version is not ready yet, here is the Chinese version**
 
 > 写完这一系列文章的所用时间比我预想的要多......
 ## **关于我**
