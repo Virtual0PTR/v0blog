@@ -11,7 +11,7 @@ featured_image = '/images/background.jpg'
 欢迎来到这里，同志！   
 这里是`虚径`，(aka Virtual0PTR(念/Virtual Zero Pointer/))  
 一名学生，生于[堡垒](https://youtu.be/dysB9Av5SHo)（[bilibili补档](https://www.bilibili.com/video/BV17Q3BzHEzv)）之中...   
-喜欢的是**不断向前进**，以及[自由软件](https://www.gnu.org/philosophy/free-sw.html)（特别是使用[AGPLv3](https://www.chinasona.org/gnu/agpl-3.0-cn.html),[GPLv3](https://jxself.org/translations/gpl-3.zh.shtml),[MPLv2](https://www.mozilla.org/en-US/MPL/2.0/),[LGPLv3](https://haydenwu.org/license-translations/lgplv3-zh.html)许可证的）   
+喜欢的是[自由软件](https://www.gnu.org/philosophy/free-sw.html)（特别是使用[AGPLv3](https://www.chinasona.org/gnu/agpl-3.0-cn.html),[GPLv3](https://jxself.org/translations/gpl-3.zh.shtml),[MPLv2](https://www.mozilla.org/en-US/MPL/2.0/),[LGPLv3](https://haydenwu.org/license-translations/lgplv3-zh.html)许可证的）   
 喜欢听海鲜与全所为类型音乐（链接不能   
 真的有人相信各种[测试结果](/about/testresult)吗？
 
@@ -21,7 +21,6 @@ featured_image = '/images/background.jpg'
 + [主要邮箱：root@0xptr.top](mailto:root@0xptr.top) [**优先**]
 + [次要邮箱：zerostartuser@outlook.com](mailto:zerostartuser@outlook.com)
 + [DN42 NOC: dn42@0xptr.top](mailto:dn42@0xptr.top)
-+ [misskey(WIP)](https://0xptr.top)
 + [telegram 私信](https://t.me/Virtual0PTR)
 + [telegram 频道](https://t.me/+_L3e2LBOYsY2NGI9) [**优先**]
 + [QQ:2586775276](https://qm.qq.com/q/PsQXBAX5uw) [*不推荐*]
