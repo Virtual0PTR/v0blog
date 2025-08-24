@@ -24,3 +24,15 @@ other = "草稿"
 
 [noArticlesFound] 
 other = "未找到任何文章"
+
+[license]
+other = "许可协议"
+
+[fdlStatementPart1]
+other = "本作品根据 "
+
+[fdlLicenseName]
+other = "GNU FDL 1.3 许可协议"
+
+[fdlStatementPart2]
+other = " 发布，无不改动部分、封面和封底。"

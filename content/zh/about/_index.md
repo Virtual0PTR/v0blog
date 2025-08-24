@@ -6,13 +6,16 @@ layout = 'single'
 featured_image = '/images/background.jpg'
 +++
 
-> 写完这一系列文章的所用时间比我预想的要多......
+> 写完这一文章的所用时间比我预想的要多......不管了   
 ## **关于我**
+> ​星火黯淡，但我们仍在这里   
+
 欢迎来到这里，同志！   
-这里是`虚径`，(aka Virtual0PTR(念/Virtual Zero Pointer/))  
+这里是`虚径`（或是`帧化流体猫`），(aka Virtual0PTR(念/Virtual Zero Pointer/),FPSWatercat)  
 一名学生，生于[堡垒](https://youtu.be/dysB9Av5SHo)（[bilibili补档](https://www.bilibili.com/video/BV17Q3BzHEzv)）之中...   
 喜欢的是[自由软件](https://www.gnu.org/philosophy/free-sw.html)（特别是使用[AGPLv3](https://www.chinasona.org/gnu/agpl-3.0-cn.html),[GPLv3](https://jxself.org/translations/gpl-3.zh.shtml),[MPLv2](https://www.mozilla.org/en-US/MPL/2.0/),[LGPLv3](https://haydenwu.org/license-translations/lgplv3-zh.html)许可证的）   
 喜欢听海鲜与全所为类型音乐（链接不能   
+政治立场：新左（毛左）   
 真的有人相信各种[测试结果](/about/testresult)吗？
 
 > *或许你又发现了我的另一个特点：特别喜欢使用超链接*   
@@ -31,7 +34,8 @@ featured_image = '/images/background.jpg'
 + [github](https://github.com/Virtual0PTR)
 + [bilibili](https://space.bilibili.com/604107414)
 ## 用户标识
-+ 见 [这里](/about/uids)
++ 见 [这里](/about/uids)   
+> ps. 如果偏技术的话，uid我会用`虚径`,`Virtual0PTR`，偏生活的话我会用`帧化流体猫`,`FPSWatercat`
 ## 技术栈
 + C++
 > 或许应该学学java，python，js什么的...

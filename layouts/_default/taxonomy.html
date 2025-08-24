@@ -5,7 +5,7 @@
     <div class="flex flex-wrap flex-nowrap-l">
       <!-- 左侧：分类信息 - 增加桌面端右侧间距 -->
       <div class="w-100 w-30-l pr5-l pr6-xl mb4 mb0-l ph3">
-        <article class="cf pa3 pa4-l bg-white br3 shadow-1">
+        <article class="cf pa3 pa4-l bg-white br0 shadow-1">
           <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links {{ $.Param "text_color" | default "mid-gray" }}">
             <h1 class="f3 f2-ns fw6 mb3">{{i18n "tag"}}:</br>{{ .Title }}</h1>
             
@@ -28,7 +28,7 @@
           {{ range .Pages }}
             <!-- 卡片布局 - 增加桌面端卡片间距 -->
             <a href="{{ .RelPermalink }}" class="no-underline w-100" style="display: block; color: inherit;">
-              <div class="w-100 mb3 mb4-l br3 shadow-1 overflow-hidden bg-white hover-bg-light-gray transition-all">
+              <div class="w-100 mb3 mb4-l br0 shadow-1 overflow-hidden bg-white hover-bg-light-gray transition-all">
                 {{ $featured_image := .Params.featured_image }}
                 {{ if $featured_image }}
                   {{ $img := .Resources.GetMatch $featured_image }}

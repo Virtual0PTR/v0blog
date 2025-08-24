@@ -24,3 +24,15 @@ other = "Draft"
 
 [noArticlesFound] 
 other = "No articles found"
+
+[license]
+other = "License"
+
+[fdlStatementPart1]
+other = "This work is published under the terms of the "
+
+[fdlLicenseName]
+other = "GNU FDL 1.3 License"
+
+[fdlStatementPart2]
+other = ", with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts."

@@ -16,6 +16,7 @@ featured_image = '/images/background.jpg'
 | FPSPing             |      🛑     |
 | FPSPinging          |      🛑     |
 | FPSWatercat         |      ✅️     |
+| 帧化流体猫            |      ✅️     |
 | zerostart           |      ⁉️     |
 | zerostartuser       |Only outlook |
 | zerostartroot       |Only outlook |
@@ -30,10 +31,10 @@ featured_image = '/images/background.jpg'
 | PTRZERO             |      ⁉️     |
 | Virtual0PTR         |      ✅️     |
 | 虚径                 |      ✅️     |
-| VirtualPing         |  仅DN42(WIP)|
+| VirtualPing         |Only DN42(WIP)|
 
 # Image List
-+ FPSWatercat's common images:   
++ FPSWatercat,帧化流体猫's common images:   
 ![FPSWatercat](/images/uids/FPSWatercat.png)
 + Virtual0PTR,虚径,0x00PTR's common images：   
 ![Virtual0PTR](/images/uids/Virtual0PTR.png)
@@ -43,7 +44,8 @@ featured_image = '/images/background.jpg'
 # Nickname evolution（
 > FPSPing(The origin is long gone and cannot be traced)   
 > -> FPSPinging(Simple repetition)   
-> -> FPSWatercat(Watercat is a liquid cat，[超级小树](https://space.bilibili.com/22263760))   
+> -> FPSWatercat(Watercat is the liquid cat，[超级小树](https://space.bilibili.com/22263760))   
+> ->-> 帧化流体猫(Chinese Translation)
 > zerostart(Brush to [Undisputed Vocaloid P Ranking](https://www.bilibili.com/video/BV1LY4y1g7FE),I once thought of being a P-master, so I "deliberately found faults, the first letter must be Z", and then I thought of a word starting with Z, "zero". In order to appear positive, I added "start", and the Chinese translation is also better (although I didn't use it))   
 > -> zerostartuser,zerostartroot(it goes without saying)   
 > ->-> zerosrp(The first domain name, "start" was shortened to "sr", and the "p" of "Producer" was added.)   

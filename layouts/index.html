@@ -21,7 +21,7 @@
           <!-- 整个卡片包裹在一个链接中 -->
           <a href="{{ .RelPermalink }}" class="no-underline" style="display: block; color: inherit;">
             <!-- 增大电脑端卡片尺寸 -->
-            <div class="w-100 mb3 mb4-l br3 shadow-1 overflow-hidden bg-white hover-bg-light-gray transition-all">
+            <div class="w-100 mb3 mb4-l br0 shadow-1 overflow-hidden bg-white hover-bg-light-gray transition-all">
               {{ if $featured_image }}
                 {{ $img := .Resources.GetMatch $featured_image }}
                 {{ if not $img }}

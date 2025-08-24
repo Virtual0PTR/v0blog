@@ -16,6 +16,7 @@ featured_image = '/images/background.jpg'
 | FPSPing             |      🛑     |
 | FPSPinging          |      🛑     |
 | FPSWatercat         |      ✅️     |
+| 帧化流体猫            |      ✅️     |
 | zerostart           |      ⁉️     |
 | zerostartuser       |  仅outlook  |
 | zerostartroot       |  仅outlook  |
@@ -33,7 +34,7 @@ featured_image = '/images/background.jpg'
 | VirtualPing         |  仅DN42(WIP)|
 
 # 图像列表
-+ FPSWatercat常用图像:   
++ FPSWatercat.帧化流体猫常用图像:   
 ![FPSWatercat](/images/uids/FPSWatercat.png)
 + Virtual0PTR,虚径,0x00PTR常用图像：   
 ![Virtual0PTR](/images/uids/Virtual0PTR.png)
@@ -44,6 +45,7 @@ featured_image = '/images/background.jpg'
 > FPSPing(来源久远不可考)   
 > -> FPSPinging(简单重复)   
 > -> FPSWatercat(Watercat即猫是液体，来自[超级小树](https://space.bilibili.com/22263760))   
+> ->-> 帧化流体猫(中文意译)
 > zerostart(刷到[毫无争议性的术力口P主排行](https://www.bilibili.com/video/BV1LY4y1g7FE),也曾有过当P主的想法，便“故意找茬，首字母必须是Z”，之后Z开头的单词一想，"zero".为了显得积极，加上了start，直译“零始”也比较好听(虽然没有用到))   
 > -> zerostartuser,zerostartroot(不言而喻)   
 > ->-> zerosrp(第一个域名，start被缩为sr，加上“P主”的p)   
