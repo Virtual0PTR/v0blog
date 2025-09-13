@@ -14,9 +14,6 @@ featured_image = '/images/background.jpg'
 这里是`虚径`（或是`帧化流体猫`），(aka Virtual0PTR(念/Virtual Zero Pointer/),FPSWatercat)  
 一名学生，生于[煤炭堡垒（山西）](https://youtu.be/dysB9Av5SHo)（[bilibili补档](https://www.bilibili.com/video/BV17Q3BzHEzv)）之中...   
 喜欢的是[自由软件](https://www.gnu.org/philosophy/free-sw.html)（特别是使用[AGPLv3](https://www.chinasona.org/gnu/agpl-3.0-cn.html),[GPLv3](https://jxself.org/translations/gpl-3.zh.shtml),[MPLv2](https://www.mozilla.org/en-US/MPL/2.0/),[LGPLv3](https://haydenwu.org/license-translations/lgplv3-zh.html)许可证的）   
-喜欢听海鲜与全所为类型音乐（链接不能   
-政治立场：新左（毛左）   
-真的有人相信各种[测试结果](/about/testresult)吗？
 
 > *或许你又发现了我的另一个特点：特别喜欢使用超链接*   
 
@@ -39,15 +36,6 @@ featured_image = '/images/background.jpg'
 ## 技术栈
 + C++
 > 或许应该学学java，python，js什么的...
-## 环境变量&技术方案
-+ 电脑：   
-![Gentoo](/images/OS.png)
-+ 手机：OPPO K9S(没有机会解锁bootloader)
-+ 刷写[Canokey](https://github.com/canokeys/canokey-nrf52)的NRF52840安全密钥2枚
-+ J1800 单臂软路由(C92)一台，刷写[OPRX](https://www.oprx.top/)
-+ PGP密钥：[0x0F1235FE00505452](/pgp.key)
-+ 密码管理方案:[Passwordstore](https://www.passwordstore.org/) 电脑使用[Qtpass](https://qtpass.org/) 手机使用[Android Password Store](https://github.com/android-password-store/Android-Password-Store)
-+ ssh鉴权由gpg-agent代管 在手机上使用[Openkeychain](https://www.openkeychain.org/)，[termux](https://termux.dev/en/)，以及[Okc-agent](https://github.com/DDoSolitary/OkcAgent)
 ## 网站
 本网站使用Hugo组建，gitcus为评论系统   
 如未指定，网站所有文章采用[GNU FDL 1.3许可证](https://www.gnu.org/licenses/fdl-1.3.html) [（中文翻译（非官方）](https://haydenwu.org/license-translations/fdlv1.3-zh.html)   
